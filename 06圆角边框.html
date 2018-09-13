@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div {
+			width: 100px;
+			height: 100px;
+		}
+
+		div:first-child {
+			background-color: red;
+			border-radius: 20px;
+		}
+
+		div:nth-child(2) {
+			background-color: green;
+			border-radius: 50%;
+		}
+
+		div:nth-child(3) {
+			width: 200px;
+			background-color: blue;
+			border-radius: 50%;
+		}
+
+		div:nth-child(4) {
+			width: 200px;
+			background-color: brown;
+			border-radius: 50px; /*设置4个圆角为50px*/
+		}
+
+		div:nth-child(5) {
+			background-color: yellow;
+			border-radius: 5px 50%;
+			/*左上角和右下角为5px，右上角和左下角为50*/%
+		}
+
+		div:nth-child(6) {
+			background-color: lightblue;
+			border-radius: 0 40px 50%; 
+			/*左上角为0， 右上角和左下角为40px， 左下角为50%*/
+		}
+		
+		div:last-child {
+			background-color: gold;
+			border-radius: 20px 30px 40px 50px;
+			/*左上角20px，右上角30px，右下角40px，左下角50px*/
+		}
+
+
+	</style>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>
